@@ -32,7 +32,7 @@ boolean isHitEndPoint(PVector p, float ex, float ey, float er) {
   return (dx*dx) + (dy*dy) < er*er;
 }
 
-boolean isHitSide(PVector p[], float ex, float ey, float er) {
+boolean isHitLine(PVector p[], float ex, float ey, float er) {
   PVector p1, p2;
   float dot, k, pqd2, pmd2, phd2, d2;
   
