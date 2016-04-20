@@ -35,11 +35,14 @@ boolean isHitNearLine(PVector p[], float ex, float ey, float er) {
     p1 = createVector(p[0], p[1]);
     p2 = createVector(p[0], point);
     
+    
     dot = dotProduct(p1, p2);
     pqd2 = vectorLength(p1);
     pmd2 = vectorLength(p2);
     
     k = dot / pqd2;
+    
+    ellipse(p1.x + height / 3, p2.y + 40, 10, 10);
     
     if(k < 0 || 1 < k) {
       continue;
